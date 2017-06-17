@@ -4,7 +4,7 @@ LABEL authors="Yves Hoppe, Robert Deutz"
 
 # Install
 RUN apt-get update \
-  && DEBIAN_FRONTEND='noninteractive' apt-get -y install software-properties-common apt-https-transport \
+  && DEBIAN_FRONTEND='noninteractive' apt-get -y install software-properties-common apt-transport-https \
   && add-apt-repository ppa:ondrej/php \
   && apt-get update \
 	&& DEBIAN_FRONTEND='noninteractive' apt-get install -y --allow-unauthenticated php php-memcache php-memcached php-redis php-xdebug wget \
