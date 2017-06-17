@@ -13,5 +13,5 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && cd /usr/local/bin \
-    && wget -O phpunit --no-check-certificate https://phar.phpunit.de/phpunit-4.8.27.phar \
+    && wget -O phpunit --no-check-certificate https://phar.phpunit.de/phpunit-4.8.35.phar \
     && chmod +x phpunit
